@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:netflix_provider/home.dart';
+import 'package:netflix_provider/view/splash/splashpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const Home(),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+          scaffoldBackgroundColor: Colors.black),
+      home: const Splashpage(),
     );
   }
 }
