@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:netflix_provider/view/login/loginpage.dart';
 import 'package:netflix_provider/widget/onboarding/onboarding_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -99,7 +100,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 SmoothPageIndicator(
                   controller: pageController,
                   count: 4,
-                  effect: const SwapEffect(
+                  effect: const ColorTransitionEffect(
                     activeDotColor: Colors.red,
                     dotHeight: 8,
                     dotWidth: 8,
@@ -118,7 +119,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    // 버튼이 클릭되었을 때 동작
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return const Loginpage();
+                        },
+                      ),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 250, 17, 0),

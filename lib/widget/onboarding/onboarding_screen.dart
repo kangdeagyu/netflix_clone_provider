@@ -68,7 +68,7 @@ class OnboardingScreen extends StatelessWidget {
                           ),
                         ),
                         const Text(
-                          "\nnetflix.com/more에서 넷플릭스\n계정을 만들고 관리하세요 ",
+                          "\nnetflix.com/more에서\n넷플릭스 계정을 만들고\n관리하세요 ",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.white,
